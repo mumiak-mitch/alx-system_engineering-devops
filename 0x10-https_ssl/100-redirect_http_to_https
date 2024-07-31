@@ -41,7 +41,7 @@ frontend backendwebserver-frontend
         default_backend backendwebserver-backend
 
 frontend backendwebserver-frontend-https
-        bind *:443 ssl crt /etc/haproxy/certs/backendwebserver.tech.pem
+        bind *:443 ssl crt /etc/haproxy/certs/www.backendwebserver.tech.pem
         http-request set-header X-Forwarded-Proto https
         default_backend backendwebserver-backend
 
